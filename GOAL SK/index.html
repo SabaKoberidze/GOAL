@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="mybalance">
+        <div class="balance">3000.00</div>
+        <div style="color: rgb(85, 194, 85)" ;>$</div>
+      </div>
+      <div class="winamount"></div>
+    </nav>
+    <div class="mainContainer">
+      <div class="menu">
+        <div class="type">
+          <label class="manual currentmode" id="manual">
+            <input
+              type="radio"
+              name="gamemode"
+              class="gamemoderadio manualradio"
+              for="mannual"
+              checked
+            />
+            Manual</label
+          >
+          <label class="automatic notcurrentmode" id="automatic">
+            <input
+              type="radio"
+              name="gamemode"
+              class="gamemoderadio automaticradio"
+              for="automatic"
+            />
+            Automatic</label
+          >
+        </div>
+        <div class="typecover"></div>
+        <div class="betinput">
+          <div>
+            <p class="inputp">Bet Amount $</p>
+            <div class="inputcontainer">
+              <button type="button" class="plusminus">-</button>
+              <input type="text" class="amount" maxlength="12" value="0.10" />
+              <button type="button" class="plusminus">+</button>
+            </div>
+          </div>
+          <div class="dlbutton">
+            <button type="button" class="addamount">1$</button>
+            <button type="button" class="addamount">3$</button>
+            <button type="button" class="addamount">5$</button>
+            <button type="button" class="addamount">10$</button>
+          </div>
+        </div>
+        <div class="betcover"></div>
+        <div class="size">
+          <p class="Field">Field Size</p>
+          <div class="sizebuttons">
+            <label class="radiocontainer">
+              <label class="radioonly">
+                <input
+                  type="radio"
+                  name="fieldsize"
+                  id="Smallver"
+                  value="0"
+                  class="radiooption"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label for="Smallver">Small</label>
+            </label>
+            <label class="radiocontainer currentcontainer">
+              <label class="radioonly">
+                <input
+                  type="radio"
+                  name="fieldsize"
+                  id="Mediumver"
+                  value="1"
+                  class="radiooption current"
+                  checked
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label for="Mediumver">Medium</label>
+            </label>
+            <label class="radiocontainer">
+              <label class="radioonly">
+                <input
+                  type="radio"
+                  name="fieldsize"
+                  id="Bigver"
+                  value="2"
+                  class="radiooption"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label for="Bigver">Big</label>
+            </label>
+          </div>
+        </div>
+        <div class="sizecover"></div>
+
+        <div class="randomize"></div>
+        <p class="onwinmanualp">On win</p>
+        <div class="onwinmanual">
+          <label class="autolabel currentauto"
+            ><input
+              type="radio"
+              name="onwinradio"
+              class="anotherradio"
+              checked
+            />Return to base</label
+          >
+          <label class="autolabel"
+            ><input type="radio" name="onwinradio" class="anotherradio" /><input
+              type="text"
+              class="percentage"
+            />
+          </label>
+          <label class="autolabel"
+            ><input type="radio" name="onwinradio" class="anotherradio" /><input
+              type="text"
+              class="percentage"
+          /></label>
+        </div>
+        <p class="onlosemanualp">On lose</p>
+        <div class="onlosemanual">
+          <label class="autolabel currentauto"
+            ><input
+              type="radio"
+              name="onloseradio"
+              class="anotherradio"
+              checked
+            />Return to base</label
+          >
+          <label class="autolabel"
+            ><input
+              type="radio"
+              name="onloseradio"
+              class="anotherradio" /><input type="text" class="percentage"
+          /></label>
+          <label class="autolabel"
+            ><input
+              type="radio"
+              name="onloseradio"
+              class="anotherradio" /><input type="text" class="percentage"
+          /></label>
+        </div>
+
+        <div class="bet">
+          <button type="button" class="betbutton">BET</button>
+        </div>
+      </div>
+      <div class="gridContainer">
+        <div class="grid"></div>
+        <div class="lostthemoney"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
