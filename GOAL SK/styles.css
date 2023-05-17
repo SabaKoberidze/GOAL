@@ -576,3 +576,72 @@ nav {
     padding: 20px 0;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .active > .innercell:nth-child(1)::after{
+    
+    display: none;
+
+  }
+  .mainContainer{
+    width:100%;
+    height: calc(100vh - 40px);
+    margin: 0;
+    flex-direction: column-reverse;
+    
+    padding: 0;
+  }
+  .grid{
+    width: 96vw;
+    height: 50vh;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+  }
+  .radioonly{
+    display: none;
+  }
+  .menu,.betcover,.size,.sizecover,.betinput{
+    max-width: 300px;
+    width: 100vw;    
+  }  
+  .sizebuttons{
+    max-width: 300px;
+    width: 100vw;
+    gap: 2vw;
+    justify-content: center;
+    
+  }
+  .radiocontainer{
+    width: calc(100vw /3.5);
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+  }
+  .bet{
+    display: flex;
+    justify-content: center;
+  }
+  .betbutton{
+    width: 90vw;
+  }
+  .dlbutton{
+    margin-left: 2vw;
+  }
+  .addamount{
+    max-width: 50px;
+    width: 16vw;
+  }
+  .multiplier{
+    width: 9vw;
+    font-size: 3vw;
+    height: 6vw;
+  }
+  .type{
+    transform: unset;
+  }
+}
